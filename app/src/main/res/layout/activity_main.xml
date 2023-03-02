@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="315dp"
+            android:layout_height="183dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/img"
+            android:rotationX="13"></ImageView>
+
+        <EditText
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textAllCaps="true"
+            android:textColor="#100408"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"></EditText>
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAllCaps="true"
+            android:textColor="#0C0404"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"></EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="#F44336"
+                android:backgroundTint="#F44336"
+                android:text="login"
+                android:textAllCaps="true"
+                android:textColor="#F6F3F4"
+                android:textStyle="bold|italic"
+                app:rippleColor="#130D0D"
+                app:strokeColor="#E91E63"></Button>
+
+            <Button
+                android:id="@+id/btnsignup"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="#F44336"
+                android:text="sign up"
+                android:textAllCaps="true"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/img_1" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
